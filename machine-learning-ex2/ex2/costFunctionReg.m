@@ -22,7 +22,7 @@ grad = zeros(size(theta));
 [unregJ, unregGrad] = costFunction(theta, X, y);
 J = unregJ + ((lambda / (2 * m)) * sum(theta .^ 2));
 
-grad = unregGrad + ((lambda / m) * theta)';
+grad = unregGrad + ((lambda / m) * theta');
 grad(1) = unregGrad(1);
 
 % =============================================================
