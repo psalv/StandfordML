@@ -29,7 +29,7 @@ for epsilon = min(pval):stepsize:max(pval)
   fn = sum((cvPredictions == 0) & (yval == 1));
   
   prec = tp / (tp + fp);
-  rec = tp / (fp + fn);
+  rec = tp / (tp + fn);
   
   F1 = (2 * prec * rec) / (prec + rec);
 
